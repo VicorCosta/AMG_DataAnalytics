@@ -29,8 +29,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
       this.emailChartType = ChartType.Pie;
       this.emailChartData = {
-        labels: ['62%', '32%', '6%'],
-        series: [62, 32, 6]
+        labels: ['62%', '32%', '6%', '20%'],
+        series: [62, 32, 6, 25]
       };
       this.emailChartLegendItems = [
         { title: 'Open', imageClass: 'fa fa-circle text-info' },

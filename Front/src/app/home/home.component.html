@@ -1,7 +1,21 @@
 <div class="main-content">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-12">
+                <lbd-chart
+                  [title]="'Corte de Pedidos'"
+                  [subtitle]="'Produtos cortados durante o processo de montagem do pedido'"
+                  [chartType]="activityChartType"
+                  [chartData]="activityChartData"
+                  [chartOptions]="activityChartOptions"
+                  [chartResponsive]="activityChartResponsive"
+                  [legendItems]="activityChartLegendItems"
+                  [withHr]="true"
+                  [footerIconClass]="'fa fa-check'"
+                  [footerText]="'Data information certified'">
+                </lbd-chart>
+            </div>
+           <!--  <div class="col-md-4">
                 <lbd-chart
                   [title]="'Email Statistics'"
                   [subtitle]="'Last Campaign Performance'"
@@ -13,8 +27,8 @@
                   [footerIconClass]="'fa fa-clock-o'"
                   [footerText]="'Campaign sent 2 days ago'">
                 </lbd-chart>
-            </div>
-            <div class="col-md-8">
+            </div> -->
+          <!--   <div class="col-md-8">
                 <lbd-chart
                   [title]="'Users Behavior'"
                   [subtitle]="'24 Hours performance'"
@@ -27,23 +41,9 @@
                   [footerIconClass]="'fa fa-history'"
                   [footerText]="'Updated 3 minutes ago'">
                 </lbd-chart>
-            </div>
+            </div> -->
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <lbd-chart
-                  [title]="'2021 Sales'"
-                  [subtitle]="'All products including Taxes'"
-                  [chartType]="activityChartType"
-                  [chartData]="activityChartData"
-                  [chartOptions]="activityChartOptions"
-                  [chartResponsive]="activityChartResponsive"
-                  [legendItems]="activityChartLegendItems"
-                  [withHr]="true"
-                  [footerIconClass]="'fa fa-check'"
-                  [footerText]="'Data information certified'">
-                </lbd-chart>
-            </div>
+       <!--  <div class="row">
             <div class="col-md-6">
                 <div class="card">
                     <div class="header">
@@ -182,5 +182,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
